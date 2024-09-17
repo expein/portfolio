@@ -5,11 +5,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --pallet-one-primary: #000000;
+  --pallet-one-secondary: #323232;
+  --pallet-one-tertiary: #FF1E56;
+  --pallet-one-quaternary: #FFAC41;
+
+  --pallet-two-primary: #1e1f20;
+  --pallet-two-secondary: #414244;
+  --pallet-two-tertiary: #FD7014;
+  --pallet-two-quaternary: #EEEEEE;
+
+  --pallet-three-primary: #222831;
+  --pallet-three-secondary: #2D4059;
+  --pallet-three-tertiary: #FF5722;
+  --pallet-three-quaternary: #EEEEEE;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1e1f20;
     --foreground: #ededed;
   }
 }
