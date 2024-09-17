@@ -1,9 +1,11 @@
+import myImage from "../../assets/img/My.jpg";
+
 const SectionToMe = () => {
     return (
-        <div className="h-screen">
-            Sección sobre mí
+        <div>
+
         </div>
-    )
+    );
 }
 
 export default SectionToMe;
