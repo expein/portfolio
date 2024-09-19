@@ -3,6 +3,7 @@ import Article from './components/Article';
 import articleSection from '@/data/ArticlesSections';
 
 import { motion, AnimatePresence } from 'framer-motion';
+import Button from '../Button/Button';
 
 interface DrawerProps {
     isVisible: boolean;
@@ -81,38 +82,8 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                                         </ul>
 
                                         <div className="mt-5 space-y-3">
-                                            <button
-                                                type="button"
-                                                className="inline-flex items-center justify-center w-full px-6 py-4 text-sm font-bold text-palletTwoSecondary transition-all duration-200 bg-palletThreeQuaternary border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-transparent hover:border-palletTwoQuaternary focus:bg-transparent hover:text-palletTwoQuaternary focus:border-palletTwoQuaternary"
-                                            >
-                                                Checkout
-                                            </button>
-
-                                            <button
-                                                type="button"
-                                                className="
-                                                    inline-flex
-                                                    items-center
-                                                    justify-center
-                                                    w-full
-                                                    px-6
-                                                    py-4
-                                                    text-sm
-                                                    font-bold
-                                                    text-palletTwoQuaternary
-                                                    transition-all
-                                                    duration-200
-                                                    bg-palletTwoTertiary
-                                                    border-2 
-                                                    border-palletTwoTertiary
-                                                    rounded-md
-                                                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
-                                                    hover:bg-transparent
-                                                    focus:bg-gray-200
-                                                "
-                                            >
-                                                Continuar compra
-                                            </button>
+                                            <Button children="Checkout" style="w-full px-6 py-4 text-sm font-bold text-palletTwoSecondary bg-palletThreeQuaternary border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-transparent hover:border-palletTwoQuaternary focus:bg-transparent hover:text-palletTwoQuaternary focus:border-palletTwoQuaternary" />
+                                            <Button children="Continuarl compra" style="w-full px-6 py-4 text-sm font-bold text-palletTwoQuaternary bg-palletTwoTertiary border-2 border-palletTwoTertiary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 hover:bg-transparent focus:bg-gray-200"/>
                                         </div>
                                     </div>
                                 </div>

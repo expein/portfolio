@@ -21,7 +21,7 @@ const SectionToMe = () => {
                     </div>
                     <div className="w-full">
                         <Button
-                            content="Cartera (Mis redes)"
+                            children="Cartera (Mis redes)"
                             style="bg-palletTwoTertiary text-palletTwoQuaternary hover:bg-transparent border-2 border-palletTwoTertiary"
                         />
                     </div>
