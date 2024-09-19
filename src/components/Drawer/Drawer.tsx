@@ -11,6 +11,12 @@ interface DrawerProps {
 
 const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
 
+    const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     return (
         <AnimatePresence>
             {isVisible && (
@@ -19,6 +25,7 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    onClick={handleOutsideClick}
                 >
                     <motion.div
                         className="fixed inset-y-0 right-0 w-full h-full max-w-xs sm:max-w-sm bg-white"
@@ -52,7 +59,7 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                                                 <ul className="-my-5 divide-y divide-gray-200 divide-dotted">
                                                     {
                                                         articleSection.map((article, index) => (
-                                                            <Article title={ article.title } id={ article.id } url={ article.url }  />
+                                                            <Article key={index} title={article.title} id={article.id} url={article.url} />
                                                         ))
                                                     }
                                                 </ul>
@@ -96,7 +103,8 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                                                     transition-all
                                                     duration-200
                                                     bg-palletTwoTertiary
-                                                    border-2 border-palletTwoTertiary
+                                                    border-2 
+                                                    border-palletTwoTertiary
                                                     rounded-md
                                                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
                                                     hover:bg-transparent

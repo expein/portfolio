@@ -1,5 +1,6 @@
 import Image from "next/image";
 import myImage from "../../assets/img/My.jpg";
+import Button from "../Button/Button";
 
 const SectionToMe = () => {
     return (
@@ -19,7 +20,10 @@ const SectionToMe = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore reprehenderit, fugit quisquam inventore quae rem vel ut molestiae ad architecto, corrupti quo similique nihil blanditiis assumenda in magni delectus?</p>
                     </div>
                     <div className="w-full">
-                        <button className="bg-palletTwoSecondary text-palletTwoQuaternary transition-all duration-200 px-5 py-2 rounded-full hover:bg-palletTwoQuaternary hover:text-palletTwoSecondary font-bold">Cartera (Mis redes)</button>
+                        <Button
+                            content="Cartera (Mis redes)"
+                            style="bg-palletTwoTertiary text-palletTwoQuaternary hover:bg-transparent border-2 border-palletTwoTertiary"
+                        />
                     </div>
                 </div>
             </div>
