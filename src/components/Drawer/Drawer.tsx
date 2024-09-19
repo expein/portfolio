@@ -1,6 +1,6 @@
 import React from 'react';
 import Article from './components/Article';
-import articleSection from '@/data/ArticlesSections';
+import articleSection from '@/data/ArticlesSection/ArticlesSections';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../Button/Button';
@@ -29,7 +29,7 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                     onClick={handleOutsideClick}
                 >
                     <motion.div
-                        className="fixed inset-y-0 right-0 w-full h-full max-w-xs sm:max-w-sm bg-white"
+                        className="fixed inset-y-0 right-0 w-full h-full max-w-xs sm:max-w-sm bg-palletTwoPrimary"
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
