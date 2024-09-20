@@ -1,6 +1,3 @@
-const { faGift } = require("@fortawesome/free-solid-svg-icons");
-const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome");
-
 const WalletData = [
     {
         title: "GitHub",
