@@ -1,5 +1,6 @@
 import Drawer from "@/components/Drawer/Drawer";
 import NavBar from "@/components/Navbar/NavBar";
+import SectionMySkills from "@/components/SectionMySkills/SectionMySkills";
 import SectionToMe from "@/components/SectionToMe/SectionToMe";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="max-w-[1440px] w-full">
         <NavBar />
         <SectionToMe />
+        <SectionMySkills />
       </div>
     </div>
   );
