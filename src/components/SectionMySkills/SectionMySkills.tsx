@@ -1,3 +1,7 @@
+'use client'
+
+import SvgIcon, { IconList } from "../SvgIcon/SvgIcon";
+
 const SectionMySkills = () => {
     return (
         <section className="py-12 bg-palletTwoPrimary sm:py-16 lg:py-20">
@@ -14,7 +18,7 @@ const SectionMySkills = () => {
                         </div>
                         <div className="relative group">
                             <div className="overflow-hidden aspect-w-1 aspect-h-1">
-                                <img className="object-cover w-full h-full transition-all duration-300 group-hover:scale-110" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/8/product-1.png" alt="" />
+                                <SvgIcon color={'#000000'} size={25} name={ IconList.IconJs } />
                             </div>
                             <h3 className="text-base font-bold text-gray-900">
                                 <a href="#" title="">
@@ -24,10 +28,14 @@ const SectionMySkills = () => {
                             </h3>
                         </div>
                         <p className="mt-2 text-sm font-bold text-gray-500">$79.00</p>
-                        <div className="flex items-center justify-center flex-1 my-5 space-x-2">
-                            <div className="w-3 h-3 bg-blue-600 border border-blue-800 rounded-full"></div>
-                            <div className="w-3 h-3 bg-yellow-500 border border-yellow-700 rounded-full"></div>
-                            <div className="w-3 h-3 bg-red-500 border border-red-800 rounded-full"></div>
+                        <div className="m-5">
+                            <div className="flex items-center justify-between">
+                                <p className="text-sm font-medium text-gray-900">Social Media</p>
+                                <p className="text-sm font-medium text-gray-900">45,211</p>
+                            </div>
+                            <div className="mt-2 bg-gray-200 h-1.5 rounded-full relative">
+                                <div className="absolute inset-y-0 left-0 bg-indigo-600 rounded-full w-[30%]"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
