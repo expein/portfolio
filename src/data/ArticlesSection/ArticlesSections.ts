@@ -8,6 +8,16 @@ const articlesSections = [
         id: 2,
         title: 'Habilidades',
         url: '#',
+    },
+    {
+        id: 3,
+        title: 'Proyectos',
+        url: '#',
+    },
+    {
+        id: 4,
+        title: 'Contacto',
+        url: '#',
     }
 ];
 

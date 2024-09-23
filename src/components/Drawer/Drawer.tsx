@@ -1,9 +1,9 @@
 import React from 'react';
 import Article from './components/Article';
 import articleSection from '@/data/ArticlesSection/ArticlesSections';
+import Button from '../Button/Button';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from '../Button/Button';
 
 interface DrawerProps {
     isVisible: boolean;
@@ -54,7 +54,7 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                                         </div>
                                     </div>
 
-                                    <div className="flex-1 overflow-y-auto">
+                                    <div className="flex-1 overflow-y-auto custom-scrollbar">
                                         <div className="px-4 py-2 sm:px-6">
                                             <div className="flow-root">
                                                 <ul className="-my-5 divide-y divide-gray-200 divide-dotted">
