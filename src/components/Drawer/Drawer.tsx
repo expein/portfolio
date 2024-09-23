@@ -1,6 +1,6 @@
 import React from 'react';
 import Article from './components/Article';
-import articleSection from '@/data/ArticlesSection/ArticlesSections';
+import articleSection from '@/data/ArticlesSectionData/ArticlesSections';
 import Button from '../Button/Button';
 
 import { motion, AnimatePresence } from 'framer-motion';

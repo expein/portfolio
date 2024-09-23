@@ -1,6 +1,3 @@
-import { faLanguage } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 interface AboutMeProps {
     icon?: any;
     children?: React.ReactNode;
