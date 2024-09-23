@@ -42,22 +42,25 @@ body {
   }
 }
 
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: var(--pallet-two-primary);
+  background: var(--pallet-two-secondary);
+  border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background: var(--pallet-two-tertiary); 
   border-radius: 10px;
-  border: 2px solid var(--pallet-two-primary);
 }
 
 .custom-scrollbar::-webkit-scrollbar-button {
-  background-color: #888;  /* Cambia el color de las flechas */
-  width: 8px;
-  height: 8px;
+  display: none;
 }

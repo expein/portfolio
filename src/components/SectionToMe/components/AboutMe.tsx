@@ -2,15 +2,15 @@ import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface AboutMeProps {
-    Icon?: any;
+    icon?: any;
     children?: React.ReactNode;
 };
 
-const AboutMe = () => {
+const AboutMe: React.FC<AboutMeProps> = ({icon, children}) => {
     return (
         <div className="flex flex-row gap-5 items-center">
-            <FontAwesomeIcon icon={faLanguage} className="w-5 h-5" />
-            <p>Español</p>
+            { icon }
+            <p>{ children }</p>
         </div>
     );
 }
