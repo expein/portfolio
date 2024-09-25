@@ -1,4 +1,3 @@
-import Drawer from "@/components/Drawer/Drawer";
 import NavBar from "@/components/Navbar/NavBar";
 import SectionMySkills from "@/components/SectionMySkills/SectionMySkills";
 import SectionToMe from "@/components/SectionToMe/SectionToMe";

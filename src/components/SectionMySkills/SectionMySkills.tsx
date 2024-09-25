@@ -1,6 +1,7 @@
 'use client'
 
-import SvgIcon, { IconList } from "../SvgIcon/SvgIcon";
+import CardSkills from "./components/CardSkills";
+import SkillData from "@/data/SkillData/SkillData";
 
 const SectionMySkills = () => {
     return (
@@ -12,32 +13,18 @@ const SectionMySkills = () => {
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 mt-12 text-center sm:grid-cols-2 lg:gap-5 lg:grid-cols-4 sm:mt-16">
-                    <div className="relative bg-[#F5F5F5] overflow-hidden flex flex-col rounded-md">
-                        <div className="absolute top-3 right-3">
-                            <p className="inline-flex items-center justify-center px-2 py-1.5 text-xs font-bold tracking-wide text-white uppercase bg-gray-600 rounded">Sale</p>
-                        </div>
-                        <div className="relative group">
-                            <div className="overflow-hidden aspect-w-1 aspect-h-1">
-                                <SvgIcon color={'#000000'} size={25} name={ IconList.IconJs } />
-                            </div>
-                            <h3 className="text-base font-bold text-gray-900">
-                                <a href="#" title="">
-                                    Arion 30 Smart Light
-                                    <span className="absolute inset-0" aria-hidden="true"></span>
-                                </a>
-                            </h3>
-                        </div>
-                        <p className="mt-2 text-sm font-bold text-gray-500">$79.00</p>
-                        <div className="m-5">
-                            <div className="flex items-center justify-between">
-                                <p className="text-sm font-medium text-gray-900">Social Media</p>
-                                <p className="text-sm font-medium text-gray-900">45,211</p>
-                            </div>
-                            <div className="mt-2 bg-gray-200 h-1.5 rounded-full relative">
-                                <div className="absolute inset-y-0 left-0 bg-indigo-600 rounded-full w-[30%]"></div>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        SkillData.map((item, index) => (
+                            <CardSkills
+                                key={index}
+                                name={item.name}
+                                icon={item.icon}
+                                percentaje={item.percentaje}
+                                price={item.price}
+                                background={item.background}
+                            />
+                        ))
+                    }
                 </div>
             </div>
         </section>
