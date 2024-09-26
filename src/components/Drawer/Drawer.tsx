@@ -22,14 +22,14 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
         <AnimatePresence>
             {isVisible && (
                 <motion.div
-                    className='fixed inset-0 bg-black bg-opacity-75 z-50'
+                    className="fixed inset-0 z-[1000] grid h-screen w-screen px-4 py-24 bg-black bg-opacity-75 sm:px-6 lg:px-8 place-items-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onClick={handleOutsideClick}
                 >
                     <motion.div
-                        className="fixed inset-y-0 right-0 w-full h-full max-w-xs sm:max-w-sm bg-palletTwoPrimary"
+                        className="fixed inset-y-0 z-[1000] right-0 w-full h-full max-w-xs sm:max-w-sm bg-palletTwoPrimary"
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}

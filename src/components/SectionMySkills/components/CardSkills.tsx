@@ -9,7 +9,7 @@ interface CardSkillsProps {
 
 const CardSkills: React.FC<CardSkillsProps> = ({ name,  icon, percentaje, price }) => {
     return (
-        <div className="relative bg-palletTwoSecondary overflow-hidden flex flex-col rounded-md">
+        <div className="relative bg-palletTwoSecondary overflow-hidden flex flex-col rounded-md z-10">
             <div className="relative group">
                 <div className="overflow-hidden flex justify-center aspect-w-1 aspect-h-1 my-5">
                     <SvgIcon color={'var(--pallet-two-primary)'} size={50} name={ icon } />
