@@ -10,7 +10,8 @@ import IconFigma from '@/assets/svg/figma-logo.svg'
 import IconGit from '@/assets/svg/git-logo.svg'
 import IconGitHub from '@/assets/svg/github-logo.svg'
 import IconTailwind from '@/assets/svg/tailwind-logo.svg'
-import IconRedux from '@/assets/svg/redux-logo.svg' 
+import IconRedux from '@/assets/svg/redux-logo.svg'
+import IconStart from '@/assets/svg/start.svg'
 
 export const SvgIconData = {
     IconSVG: {
@@ -27,5 +28,6 @@ export const SvgIconData = {
         IconGitHub,
         IconTailwind,
         IconRedux,
+        IconStart
     }
 }

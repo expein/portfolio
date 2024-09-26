@@ -1,9 +1,9 @@
-import React from 'react';
-import Article from './components/Article';
-import articleSection from '@/data/ArticlesSectionData/ArticlesSections';
-import Button from '../Button/Button';
-
+import React, { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import DrawerHeader from './components/DrawerHeader';
+import DrawerContent from './components/DrawerContent';
+import DrawerFooter from './components/DrawerFooter';
+import useOutsideClick from '@/hooks/Drawer/Drawer';
 
 interface DrawerProps {
     isVisible: boolean;
@@ -11,12 +11,9 @@ interface DrawerProps {
 }
 
 const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
+    const drawerRef = useRef<HTMLDivElement>(null);
 
-    const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
-        if (e.target === e.currentTarget) {
-            onClose();
-        }
-    };
+    useOutsideClick(drawerRef, onClose);
 
     return (
         <AnimatePresence>
@@ -26,7 +23,6 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    onClick={handleOutsideClick}
                 >
                     <motion.div
                         className="fixed inset-y-0 z-[1000] right-0 w-full h-full max-w-xs sm:max-w-sm bg-palletTwoPrimary"
@@ -34,58 +30,14 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
                         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                        ref={drawerRef}
                     >
                         <div className="fixed inset-y-0 right-0 w-full h-full max-w-xs sm:max-w-sm">
                             <div className="h-full overflow-hidden bg-palletTwoPrimary">
                                 <div className="flex flex-col h-full">
-                                    <div className="flex-shrink-0 px-4 py-5">
-                                        <div className="flex items-center justify-between">
-                                            <p className="text-base font-bold text-palletTwoQuaternary">Carrito de compras</p>
-
-                                            <button
-                                                type="button"
-                                                className="p-2 -m-2 text-palletTwoQuaternary transition-all duration-200 bg-transparent rounded-md hover:bg-palletTwoQuaternary hover:text-palletTwoSecondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                                                onClick={onClose}
-                                            >
-                                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex-1 overflow-y-auto custom-scrollbar">
-                                        <div className="px-4 py-2 sm:px-6">
-                                            <div className="flow-root">
-                                                <ul className="-my-5 divide-y divide-gray-200 divide-dotted">
-                                                    {
-                                                        articleSection.map((article, index) => (
-                                                            <Article key={index} title={article.title} id={article.id} url={article.url} />
-                                                        ))
-                                                    }
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="px-4 py-5 border-t border-gray-200 sm:p-6">
-                                        <ul className="space-y-4">
-                                            <li className="flex items-center justify-between">
-                                                <p className="text-sm font-medium text-palletTwoQuaternary">Sub total</p>
-                                                <p className="text-sm font-medium text-palletTwoQuaternary">$399</p>
-                                            </li>
-
-                                            <li className="flex items-center justify-between">
-                                                <p className="text-sm font-medium text-palletTwoTertiary">Total</p>
-                                                <p className="text-sm font-bold text-palletTwoTertiary">$399</p>
-                                            </li>
-                                        </ul>
-
-                                        <div className="mt-5 space-y-3">
-                                            <Button children="Checkout" style="w-full px-6 py-4 text-sm font-bold text-palletTwoSecondary bg-palletThreeQuaternary border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-transparent hover:border-palletTwoQuaternary focus:bg-transparent hover:text-palletTwoQuaternary focus:border-palletTwoQuaternary" />
-                                            <Button children="Continuar compra" style="w-full px-6 py-4 text-sm font-bold text-palletTwoQuaternary bg-palletTwoTertiary border-2 border-palletTwoTertiary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 hover:bg-transparent focus:bg-gray-200"/>
-                                        </div>
-                                    </div>
+                                    <DrawerHeader onClose={onClose} />
+                                    <DrawerContent />
+                                    <DrawerFooter />
                                 </div>
                             </div>
                         </div>

@@ -21,6 +21,8 @@
   --pallet-three-secondary: #2D4059;
   --pallet-three-tertiary: #FF5722;
   --pallet-three-quaternary: #EEEEEE;
+
+  --yellow-primary: #FFD700;
 }
 
 @media (prefers-color-scheme: dark) {

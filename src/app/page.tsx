@@ -1,4 +1,5 @@
 import NavBar from "@/components/Navbar/NavBar";
+import SectionMyExperience from "@/components/SectionMyExperience/SectionMyExperience";
 import SectionMySkills from "@/components/SectionMySkills/SectionMySkills";
 import SectionToMe from "@/components/SectionToMe/SectionToMe";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <NavBar />
         <SectionToMe />
         <SectionMySkills />
+        <SectionMyExperience />
       </div>
     </div>
   );
