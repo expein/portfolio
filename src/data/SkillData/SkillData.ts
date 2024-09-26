@@ -5,7 +5,6 @@ interface SkillItem {
     icon: React.ElementType;
     percentaje: string;
     price: number;
-    background: string;
 };
 
 const SkillData: SkillItem[] = [
@@ -14,63 +13,78 @@ const SkillData: SkillItem[] = [
         icon: IconList.IconJs,
         percentaje: "90",
         price: 240,  
-        background: "var(--pallet-two-quaternary)"
     },
     {
         name: "TypeScript",
         icon: IconList.IconTs,
         percentaje: "30",
         price: 240,
-        background: ""
     },
     {
         name: "PHP",
         icon: IconList.IconPHP,
         percentaje: "90",
         price: 240,
-        background: ""
     },
     {
         name: "React",
         icon: IconList.IconReact,
         percentaje: "90",
         price: 240,
-        background: ""
     },
     {
         name: "NextJs",
         icon: IconList.IconNextJs,
         percentaje: "30",
         price: 240,
-        background: ""
     },
     {
         name: "Laravel",
         icon: IconList.IconLaravel,
         percentaje: "90",
         price: 240,
-        background: ""
     },
     {
         name: "Livewire",
         icon: IconList.IconLivewire,
         percentaje: "90",
         price: 240,
-        background: ""
     },
     {
         name: "MySQL",
         icon: IconList.IconMySQL,
-        percentaje: "90",
+        percentaje: "70",
         price: 240,
-        background: ""
     },
     {
         name: "Figma",
         icon: IconList.IconFigma,
+        percentaje: "70",
+        price: 240,
+    },
+    {
+        name: "Git",
+        icon: IconList.IconGit,
         percentaje: "90",
         price: 240,
-        background: ""
+    },
+    {
+        name: "GitHub",
+        icon: IconList.IconGitHub,
+        percentaje: "90",
+        price: 240
+    },
+    {
+        name: "Tailwind",
+        icon: IconList.IconTailwind,
+        percentaje: "80",
+        price: 240
+    },
+    {
+        name: "Redux",
+        icon: IconList.IconRedux,
+        percentaje: "70",
+        price: 240
     }
 ];
 

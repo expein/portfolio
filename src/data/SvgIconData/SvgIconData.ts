@@ -7,6 +7,10 @@ import IconTs from '@/assets/svg/ts-logo.svg'
 import IconNextJs from '@/assets/svg/next-js-logo.svg'
 import IconMySQL from '@/assets/svg/mysql-logo.svg'
 import IconFigma from '@/assets/svg/figma-logo.svg'
+import IconGit from '@/assets/svg/git-logo.svg'
+import IconGitHub from '@/assets/svg/github-logo.svg'
+import IconTailwind from '@/assets/svg/tailwind-logo.svg'
+import IconRedux from '@/assets/svg/redux-logo.svg' 
 
 export const SvgIconData = {
     IconSVG: {
@@ -18,6 +22,10 @@ export const SvgIconData = {
         IconLaravel,
         IconLivewire,
         IconMySQL,
-        IconFigma
+        IconFigma,
+        IconGit,
+        IconGitHub,
+        IconTailwind,
+        IconRedux,
     }
 }
