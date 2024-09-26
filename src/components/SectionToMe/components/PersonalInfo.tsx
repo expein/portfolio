@@ -5,7 +5,7 @@ const PersonalInfo = () => (
             <p className="text-xl">Desarrollador FullStack</p>
         </div>
         <div className="text-justify w-full">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore reprehenderit, fugit quisquam inventore quae rem vel ut molestiae ad architecto, corrupti quo similique nihil blanditiis assumenda in magni delectus?</p>
+            <p>Soy una persona adaptable que se ajusta rápidamente a nuevos entornos y aprende con facilidad las dinámicas de trabajo. Estoy dispuesto a adquirir nuevos conocimientos para contribuir efectivamente al equipo.</p>
         </div>
     </>
 );

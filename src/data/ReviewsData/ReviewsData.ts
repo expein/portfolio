@@ -1,5 +1,11 @@
 import PDTimg from "@/assets/img/PDT-logo.png";
 
+interface CommentsItem {
+    img: string;
+    review: string;
+    name: string;
+};
+
 interface ReviewsItem {
     img: string;
     stars: number;
@@ -7,6 +13,7 @@ interface ReviewsItem {
     name: string;
     startDate: string;
     endDate: string;
+    comments: CommentsItem[];
 };
 
 const ReviewsData: ReviewsItem[] = [
@@ -17,6 +24,38 @@ const ReviewsData: ReviewsItem[] = [
         name: "PDT Agencia",
         startDate: "Diciembre 20, 2023",
         endDate: "Septiembre 21, 2024",
+        comments: [
+            {
+                img: PDTimg.src,
+                review: "Creación de CRM para agencia de viajes",
+                name: "PDT Agencia",
+            },
+            {
+                img: PDTimg.src,
+                review: "Desarrollo de gestion de clientes con cotización",
+                name: "PDT Agencia",
+            },
+            {
+                img: PDTimg.src,
+                review: "Desarrollo de gestion de usaurios y roles",
+                name: "PDT Agencia",
+            },
+            {
+                img: PDTimg.src,
+                review: "Desarrollo de gestion de agencias",
+                name: "PDT Agencia",
+            },
+            {
+                img: PDTimg.src,
+                review: "Desarrollo de gestion de paquetes turisticos",
+                name: "PDT Agencia",
+            },
+            {
+                img: PDTimg.src,
+                review: "Desarrollo de gestion de hoteles",
+                name: "PDT Agencia",
+            }
+        ]
     },
 ];
 

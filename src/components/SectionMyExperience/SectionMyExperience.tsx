@@ -1,3 +1,5 @@
+'use client';
+
 import Section from "../Section/Section";
 import ReviewsData from "@/data/ReviewsData/ReviewsData";
 import ReviewCard from "./components/ReviewCard";
@@ -17,6 +19,7 @@ const SectionMyExperience = () => {
                             name={item.name}
                             startDate={item.startDate}
                             endDate={item.endDate}
+                            components={item.comments}
                         />
                     ))
                   }  
