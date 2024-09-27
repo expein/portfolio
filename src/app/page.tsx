@@ -1,4 +1,5 @@
 import NavBar from "@/components/Navbar/NavBar";
+import SectionContactMe from "@/components/SectionContactMe/SectionContactMe";
 import SectionMyExperience from "@/components/SectionMyExperience/SectionMyExperience";
 import SectionMyProjects from "@/components/SectionMyProjects/SectionMyProjects";
 import SectionMySkills from "@/components/SectionMySkills/SectionMySkills";
@@ -13,6 +14,7 @@ export default function Home() {
         <SectionMySkills />
         <SectionMyExperience />
         <SectionMyProjects />
+        <SectionContactMe />
       </div>
     </div>
   );

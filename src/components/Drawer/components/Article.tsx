@@ -4,7 +4,7 @@ interface ArticleProps {
     url: string;
 }
 
-const Article: React.FC<ArticleProps> = ({title, id, url}) => {
+const Article: React.FC<ArticleProps> = ({title, id}) => {
     return(
         <li className="flex py-5">
             <div className="flex-shrink-0">

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import DrawerHeader from './components/DrawerHeader';
 import DrawerContent from './components/DrawerContent';
 import DrawerFooter from './components/DrawerFooter';
-import useOutsideClick from '@/hooks/Drawer/Drawer';
+import useOutsideClick from '@/hooks/Drawer/drawer';
 
 interface DrawerProps {
     isVisible: boolean;
