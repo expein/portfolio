@@ -9,7 +9,7 @@ interface ToggleButtonProps {
 
 const ToggleButton: React.FC<ToggleButtonProps> = ({ showAll, handleShowMore, handleShowLess, componentsLength }) => {
     return (
-        <div className="mx-9 mt-4">
+        <div className="mx-9">
             {!showAll && componentsLength > 3 && (
                 <button 
                     className="text-palletTwoTertiary underline-animation"

@@ -78,9 +78,9 @@ body {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 2px; /* Ajusta la posición para que sea visible */
+    bottom: 2px;
     left: 0;
-    background-color: currentColor; /* Usa el color actual del texto */
+    background-color: currentColor;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
