@@ -1,17 +1,30 @@
 import Image from "next/image";
-import PdtImg from "@/assets/img/PDT-logo.png"
+import PdtImg from "@/assets/img/PDT-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 interface ArticleProps {
     title: string;
     id: number;
-    url: string;
+    scroll: number;
+    price: string;
+    onClose: () => void;
 }
 
-const Article: React.FC<ArticleProps> = ({title, id}) => {
-    return(
+const Article: React.FC<ArticleProps> = ({ title, id, scroll, price, onClose }) => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: scroll, behavior: 'smooth' });
+    };
+
+    const onHandle = () => {
+        scrollToTop();
+        onClose();
+    };
+
+    return (
         <li className="flex py-5">
             <div className="flex-shrink-0">
-                <Image src={PdtImg} alt="pdt" className="object-cover w-16 h-16 rounded-lg"/>
+                <Image src={PdtImg} alt="pdt" className="object-cover w-16 h-16 rounded-lg" />
             </div>
 
             <div className="flex items-stretch justify-between flex-1 ml-5 space-x-5">
@@ -21,17 +34,19 @@ const Article: React.FC<ArticleProps> = ({title, id}) => {
                 </div>
 
                 <div className="flex flex-col items-end justify-between">
-                    <p className="flex-shrink-0 w-20 text-sm font-bold text-right text-palletTwoTertiary">$259.00</p>
+                    <p className="flex-shrink-0 w-20 text-sm font-bold text-right text-palletTwoTertiary">${ price }</p>
 
-                    <button type="button" className="inline-flex p-2 -m-2 text-palletTwoQuaternary transition-all duration-200 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-palletTwoTertiary">
-                        <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                        </svg>
+                    <button
+                        type="button"
+                        className="inline-flex p-2 -m-2 text-palletTwoQuaternary hover:text-palletTwoSecondary hover:bg-palletTwoQuaternary transition-all duration-200 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                        onClick={onHandle}
+                    >
+                        <FontAwesomeIcon icon={faEye} />
                     </button>
                 </div>
             </div>
         </li>
     );
-}
+};
 
 export default Article;

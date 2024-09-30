@@ -19,7 +19,7 @@ const SectionToMe = () => {
 
     return (
         <>
-            <div className="h-screen w-full grid md:grid-cols-2 grid-cols-1 gap-10 px-10">
+            <div className="min-h-screen w-full grid md:grid-cols-2 grid-cols-1 gap-10 px-10">
                 <ProfileImage />
                 
                 <div className="flex flex-col gap-10 items-center justify-center h-full">

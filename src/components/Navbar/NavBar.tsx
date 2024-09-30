@@ -1,19 +1,16 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import OptionNavbar from "./components/OptionsNavbar";
 import Drawer from '../Drawer/Drawer';
+import useNavbar from '@/hooks/NavBar/Navbar';
 
 const NavBar = () => {
-    const [isDrawerVisible, setIsDrawerVisible] = useState(false);
-
-    const handleOpenDrawer = () => {
-        setIsDrawerVisible(true);
-    };
-
-    const handleCloseDrawer = () => {
-        setIsDrawerVisible(false);
-    };
+    const { 
+        isDrawerVisible,
+        handleOpenDrawer, 
+        handleCloseDrawer 
+    } = useNavbar();
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">

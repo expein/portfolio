@@ -47,7 +47,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ form, values, errors, handleC
         <div className="sm:col-span-2">
             <label className="text-base font-normal text-palletTwoQuaternary"> Mensaje </label>
             <div className="mt-2">
-                <textarea name="message" id="message" placeholder="Escribe tu mensaje" className={`block w-full px-5 py-4 text-base font-normal text-white placeholder-gray-500 bg-transparent border-2 ${errors.message ? 'border-red-500' : 'border-palletTwoTertiary'} rounded-md resize-y focus:outline-none focus:ring-0`} value={values.message} onChange={handleChange}></textarea>
+                <textarea name="message" id="message" placeholder="Escribe tu mensaje" className={`block w-full px-5 py-4 text-base font-normal text-white placeholder-gray-500 bg-transparent border-2 ${errors.message ? 'border-red-500' : 'border-palletTwoTertiary'} scrollbar-none rounded-md resize-y focus:outline-none focus:ring-0`} value={values.message} onChange={handleChange}></textarea>
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
             </div>
         </div>

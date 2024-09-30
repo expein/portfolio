@@ -36,8 +36,8 @@ const Drawer: React.FC<DrawerProps> = ({ isVisible, onClose }) => {
                             <div className="h-full overflow-hidden bg-palletTwoPrimary">
                                 <div className="flex flex-col h-full">
                                     <DrawerHeader onClose={onClose} />
-                                    <DrawerContent />
-                                    <DrawerFooter />
+                                    <DrawerContent onClose={onClose} />
+                                    <DrawerFooter onClose={onClose} />
                                 </div>
                             </div>
                         </div>
