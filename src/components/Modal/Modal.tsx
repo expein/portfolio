@@ -2,11 +2,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface ModalProps {
     children: React.ReactNode;
+    title: React.ReactNode;
     isOpen: boolean;
     onClose: () => void;
-};
+  }
 
-const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({ children, title, isOpen, onClose }) => {
     
     const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
         if (e.target === e.currentTarget) {
@@ -33,9 +34,9 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
                         transition={{ duration: 0.3 }}
                     >
                         <div className="p-6">
-                            <div className="flex items-center justify-between space-x-6">
+                            <div className="flex items-start justify-between space-x-6">
                                 <p className="flex-1 text-xl font-bold text-palletTwoQuaternary">
-                                    Cartera
+                                    { title }
                                 </p>
                     
                                 <div>

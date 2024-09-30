@@ -1,3 +1,6 @@
+import Image from "next/image";
+import PdtImg from "@/assets/img/PDT-logo.png"
+
 interface ArticleProps {
     title: string;
     id: number;
@@ -8,7 +11,7 @@ const Article: React.FC<ArticleProps> = ({title, id}) => {
     return(
         <li className="flex py-5">
             <div className="flex-shrink-0">
-                <img className="object-cover w-16 h-16 rounded-lg" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/cart-popup/2/product-1.png" alt="" />
+                <Image src={PdtImg} alt="pdt" className="object-cover w-16 h-16 rounded-lg"/>
             </div>
 
             <div className="flex items-stretch justify-between flex-1 ml-5 space-x-5">
