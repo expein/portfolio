@@ -1,4 +1,3 @@
-import NavBar from "@/components/Navbar/NavBar";
 import SectionContactMe from "@/components/SectionContactMe/SectionContactMe";
 import SectionMyExperience from "@/components/SectionMyExperience/SectionMyExperience";
 import SectionMyProjects from "@/components/SectionMyProjects/SectionMyProjects";
