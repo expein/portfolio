@@ -20,7 +20,7 @@ const ReviewsData: ReviewsItem[] = [
     {
         img: PDTimg.src,
         stars: 4,
-        review: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+        review: "Desarrollador web full stack, enfocado a 2 sitios web de la empresa PDT Agencia, creando un CRM para la gestion de clientes, agencias, paquetes turisticos y hoteles.",
         name: "PDT Agencia",
         startDate: "Diciembre 20, 2023",
         endDate: "Septiembre 21, 2024",

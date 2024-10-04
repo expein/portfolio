@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faGlobe, faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlobe, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface AboutMeItem {
@@ -19,6 +19,12 @@ const AboutMeData: AboutMeItem[] = [
         title: "Español",
         icon: (
             <FontAwesomeIcon icon={faLanguage} className="w-5 h-5" />
+        )
+    },
+    {
+        title: "santyalzateo05@gmail.com",
+        icon: (
+            <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
         )
     }
 ];

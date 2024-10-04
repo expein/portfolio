@@ -8,6 +8,7 @@ const nextConfig = {
 
     return config;
   },
+  ...nextI18NextConfig,
 };
 
 export default nextConfig;
