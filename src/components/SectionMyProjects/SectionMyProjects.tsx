@@ -12,7 +12,6 @@ const SectionMyProjects = () => {
                             key={index}
                             title={item.title}
                             img={item.img}
-                            price={item.price}
                             url={item.url}
                         />
                     ))
