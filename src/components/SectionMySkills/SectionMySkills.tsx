@@ -14,8 +14,6 @@ const SectionMySkills = () => {
                             key={index}
                             name={item.name}
                             icon={item.icon}
-                            percentaje={item.percentaje}
-                            price={item.price}
                         />
                     ))
                 }

@@ -3,88 +3,60 @@ import { IconList } from "@/components/SvgIcon/SvgIcon";
 interface SkillItem {
     name: string;
     icon: React.ElementType;
-    percentaje: string;
-    price: number;
 };
 
 const SkillData: SkillItem[] = [
     {
         name: "JavaScript",
         icon: IconList.IconJs,
-        percentaje: "90",
-        price: 240,  
     },
     {
         name: "TypeScript",
-        icon: IconList.IconTs,
-        percentaje: "30",
-        price: 240,
+        icon: IconList.IconTs
     },
     {
         name: "PHP",
-        icon: IconList.IconPHP,
-        percentaje: "90",
-        price: 240,
+        icon: IconList.IconPHP
     },
     {
         name: "React",
-        icon: IconList.IconReact,
-        percentaje: "90",
-        price: 240,
+        icon: IconList.IconReact
     },
     {
         name: "NextJs",
-        icon: IconList.IconNextJs,
-        percentaje: "30",
-        price: 240,
+        icon: IconList.IconNextJs
     },
     {
         name: "Laravel",
-        icon: IconList.IconLaravel,
-        percentaje: "90",
-        price: 240,
+        icon: IconList.IconLaravel
     },
     {
         name: "Livewire",
-        icon: IconList.IconLivewire,
-        percentaje: "90",
-        price: 240,
+        icon: IconList.IconLivewire
     },
     {
         name: "MySQL",
-        icon: IconList.IconMySQL,
-        percentaje: "70",
-        price: 240,
+        icon: IconList.IconMySQL
     },
     {
         name: "Figma",
-        icon: IconList.IconFigma,
-        percentaje: "70",
-        price: 240,
+        icon: IconList.IconFigma
     },
     {
         name: "Git",
-        icon: IconList.IconGit,
-        percentaje: "90",
-        price: 240,
+        icon: IconList.IconGit
     },
     {
         name: "GitHub",
-        icon: IconList.IconGitHub,
-        percentaje: "90",
-        price: 240
+        icon: IconList.IconGitHub
     },
     {
         name: "Tailwind",
-        icon: IconList.IconTailwind,
-        percentaje: "80",
-        price: 240
+        icon: IconList.IconTailwind
     },
     {
         name: "Redux",
-        icon: IconList.IconRedux,
-        percentaje: "70",
-        price: 240
+        icon: IconList.IconRedux
     }
 ];
 
