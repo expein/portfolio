@@ -20,7 +20,7 @@ const ReviewsData: ReviewsItem[] = [
     {
         img: PDTimg.src,
         stars: 4,
-        review: "Desarrollador web full stack, enfocado a 2 sitios web de la empresa PDT Agencia, creando un CRM para la gestion de clientes, agencias, paquetes turisticos y hoteles.",
+        review: "Desarrollador web full stack, enfocado a 2 sitios web de la empresa PDT Agencia, creando un CRM para la gestión de clientes, agencias, paquetes turisticos y hoteles.",
         name: "PDT Agencia",
         startDate: "Diciembre 20, 2023",
         endDate: "Septiembre 21, 2024",
@@ -32,27 +32,27 @@ const ReviewsData: ReviewsItem[] = [
             },
             {
                 img: PDTimg.src,
-                review: "Desarrollo de gestion de clientes con cotización",
+                review: "Desarrollo de gestión de clientes con cotización",
                 name: "PDT Agencia",
             },
             {
                 img: PDTimg.src,
-                review: "Desarrollo de gestion de usaurios y roles",
+                review: "Desarrollo de gestión de usuarios y roles",
                 name: "PDT Agencia",
             },
             {
                 img: PDTimg.src,
-                review: "Desarrollo de gestion de agencias",
+                review: "Desarrollo de gestión de agencias",
                 name: "PDT Agencia",
             },
             {
                 img: PDTimg.src,
-                review: "Desarrollo de gestion de paquetes turisticos",
+                review: "Desarrollo de gestión de paquetes turísticos",
                 name: "PDT Agencia",
             },
             {
                 img: PDTimg.src,
-                review: "Desarrollo de gestion de hoteles",
+                review: "Desarrollo de gestión de hoteles",
                 name: "PDT Agencia",
             }
         ]
