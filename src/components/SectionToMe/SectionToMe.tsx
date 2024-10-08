@@ -7,9 +7,6 @@ import WalletModal from "./components/WalletModal";
 import useModalWallet from "@/hooks/ModalWallet/modalWallet";
 import Button from "../Button/Button";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWallet } from "@fortawesome/free-solid-svg-icons";
-
 const SectionToMe = () => {
     const {
         isOpen,
@@ -32,7 +29,7 @@ const SectionToMe = () => {
                         closeModal={closeModal}
                     >
                         <Button onClick={openModal} style="bg-palletTwoTertiary text-palletTwoQuaternary hover:bg-transparent border-2 border-palletTwoTertiary">
-                            <FontAwesomeIcon icon={faWallet} className="w-5 h-5 mr-5" /> (Mis redes)
+                            Mis redes
                         </Button>
                     </WalletModal>
                 </div>
