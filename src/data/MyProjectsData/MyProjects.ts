@@ -1,5 +1,5 @@
 import MyPortfolio from "@/assets/img/My-portfolio.png";
-import TradingInversion from "@/assets/img/Trading-Inversion.png";
+import TradingInversion from "@/assets/img/Trading-inversion.png";
 
 interface ProjectItem {
     img: string;
