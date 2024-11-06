@@ -9,13 +9,9 @@ export default function Home() {
     <div className="w-full flex flex-col items-center">
       <div className="max-w-[1440px] w-full">
         <SectionToMe />
-        
         <SectionMySkills />
-        
         <SectionMyExperience />
-        
         <SectionMyProjects />
-        
         <SectionContactMe />
       </div>
     </div>
